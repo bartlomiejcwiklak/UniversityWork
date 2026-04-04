@@ -1,0 +1,9 @@
+======== My shopping list ========
+
+# Cleaning Supplies:
+
+   - Soap
+
+# Electronics:
+
+   - USB Cable

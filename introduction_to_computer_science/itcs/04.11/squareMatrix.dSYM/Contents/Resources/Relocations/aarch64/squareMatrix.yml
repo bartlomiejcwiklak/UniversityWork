@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/baro/C/itcs/04.11/squareMatrix'
+relocations:     []
+...

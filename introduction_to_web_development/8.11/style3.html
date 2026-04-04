@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Funnel Display", sans-serif;
+        }
+
+        body {
+            background-color: #1e1e1e;
+            color: white;
+        }
+
+        #banner {
+            background: linear-gradient(137deg, rgba(26,25,46,1) 0%, rgba(75,30,94,1) 100%);
+            padding: 75px;
+            text-align: center;
+        }
+
+        #banner h1 {
+            font-size: 50px;
+        }
+
+        #banner p {
+            font-size: 25px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        } 
+        
+        li a:hover {
+            opacity: 75%;
+        }
+
+        h5 {
+            font-size: 24px;
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            padding-bottom: 10px;
+        }
+
+        #main {
+            padding: 4%;
+            width: 60%;
+            line-height: 32px;
+        }
+
+        #sidebar {
+            float: right;
+            width: 25%;
+            padding: 4%;
+            transform:translateY(-410px);
+            line-height: 32px;
+        }
+
+        #active {
+            background-color: rgba(75,30,94,1); 
+        }
+
+        #main a {
+            color: #b157da;
+        }
+
+        #main a:hover {
+            color: #c17fe0;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <h1>Welcome to My Homepage</h1>
+        <p>Use the menu to select different stylesheets</p>
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li><a href="style1.html">Stylesheet 1</a></li>
+            <li><a href="style2.html">Stylesheet 2</a></li>
+            <li id="active"><a href="style3.html">Stylesheet 3</a></li>
+            <li><a href="">Stylesheet 4</a></li>
+            <li style="float:right"><a href="nostyle.html">No stylesheet</a></li>
+        </ul>
+    </div>
+    <div id="main">
+        <h1>Same Page Different Stylesheets</h1>
+        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change
+            the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+        </p>
+        <p><a href="style1.html">Stylesheet1</a>, <a href="style2.html">Stylesheet2</a>, <a href="">Stylesheet3</a>, <a href="">Stylesheet4</a>.</p><br>
+        <h3>No Styles</h3>
+        <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks with no stylesheet:</p>
+        <p><a href="nostyle.html">No stylesheet</a>.</p>
+    </div>
+    <div id="sidebar">
+        <h5>Side-Bar</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur erat turpis, viverra sed orci a, suscipit sagittis turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur erat turpis, viverra sed orci a, suscipit sagittis turpis.</p>
+        
+    </div>
+</body>
+</html>

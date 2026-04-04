@@ -1,0 +1,3 @@
+/Users/baro/CLionProjects/fajnykod/cmake-build-debug/CMakeFiles/fajnykod.dir
+/Users/baro/CLionProjects/fajnykod/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/baro/CLionProjects/fajnykod/cmake-build-debug/CMakeFiles/rebuild_cache.dir

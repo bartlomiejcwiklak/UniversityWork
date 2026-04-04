@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module pong</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">pong</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:/Users/baro/College/Python/PONG/pong.py">/Users/baro/College/Python/PONG/pong.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="pygame.html">pygame</a><br>
+</td><td class="multicolumn"><a href="sys.html">sys</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-draw_objects"><strong>draw_objects</strong></a>()</dt><dd><span class="code">Draws&nbsp;all&nbsp;objects&nbsp;and&nbsp;UI&nbsp;elements&nbsp;on&nbsp;the&nbsp;screen.<br>
+This&nbsp;includes:<br>
+-&nbsp;Filling&nbsp;the&nbsp;screen&nbsp;with&nbsp;a&nbsp;COL_BLK&nbsp;background.<br>
+-&nbsp;Drawing&nbsp;the&nbsp;player&nbsp;and&nbsp;opponent&nbsp;scores.<br>
+-&nbsp;Drawing&nbsp;the&nbsp;player&nbsp;paddle,&nbsp;opponent&nbsp;paddle,&nbsp;and&nbsp;the&nbsp;ball.<br>
+-&nbsp;Displaying&nbsp;the&nbsp;FPS&nbsp;counter&nbsp;at&nbsp;the&nbsp;top&nbsp;of&nbsp;the&nbsp;screen.</span></dd></dl>
+ <dl><dt><a name="-end_screen"><strong>end_screen</strong></a>()</dt><dd><span class="code">Displays&nbsp;the&nbsp;end&nbsp;screen&nbsp;after&nbsp;a&nbsp;player&nbsp;wins&nbsp;or&nbsp;the&nbsp;game&nbsp;ends.<br>
+-&nbsp;Shows&nbsp;the&nbsp;scores&nbsp;for&nbsp;both&nbsp;players&nbsp;and&nbsp;a&nbsp;button&nbsp;to&nbsp;return&nbsp;to&nbsp;the&nbsp;main&nbsp;menu.<br>
+-&nbsp;Handles&nbsp;user&nbsp;input&nbsp;for&nbsp;returning&nbsp;to&nbsp;the&nbsp;menu&nbsp;or&nbsp;quitting&nbsp;the&nbsp;game.</span></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><span class="code">The&nbsp;main&nbsp;game&nbsp;loop.<br>
+-&nbsp;Starts&nbsp;by&nbsp;displaying&nbsp;the&nbsp;main&nbsp;menu.<br>
+-&nbsp;Handles&nbsp;game&nbsp;logic,&nbsp;rendering,&nbsp;and&nbsp;user&nbsp;input&nbsp;for&nbsp;singleplayer<br>
+and&nbsp;multiplayer&nbsp;modes.<br>
+-&nbsp;Ends&nbsp;the&nbsp;game&nbsp;if&nbsp;a&nbsp;player&nbsp;reaches&nbsp;the&nbsp;score&nbsp;limit&nbsp;or&nbsp;the&nbsp;escape<br>
+key&nbsp;is&nbsp;pressed.</span></dd></dl>
+ <dl><dt><a name="-main_menu"><strong>main_menu</strong></a>()</dt><dd><span class="code">Displays&nbsp;the&nbsp;main&nbsp;menu,&nbsp;allowing&nbsp;the&nbsp;user&nbsp;to&nbsp;select&nbsp;the&nbsp;game&nbsp;mode&nbsp;or&nbsp;quit.<br>
+-&nbsp;Provides&nbsp;options&nbsp;for&nbsp;singleplayer,&nbsp;multiplayer,&nbsp;and&nbsp;quitting&nbsp;the&nbsp;game.</span></dd></dl>
+ <dl><dt><a name="-move_ball"><strong>move_ball</strong></a>()</dt><dd><span class="code">Moves&nbsp;the&nbsp;ball&nbsp;and&nbsp;handles&nbsp;its&nbsp;collisions&nbsp;with&nbsp;paddles&nbsp;and&nbsp;screen&nbsp;edges.<br>
+-&nbsp;Updates&nbsp;the&nbsp;ball's&nbsp;position&nbsp;based&nbsp;on&nbsp;its&nbsp;speed&nbsp;and&nbsp;multiplier.<br>
+-&nbsp;Reflects&nbsp;the&nbsp;ball&nbsp;if&nbsp;it&nbsp;hits&nbsp;the&nbsp;top&nbsp;or&nbsp;bottom&nbsp;of&nbsp;the&nbsp;screen.<br>
+-&nbsp;Reflects&nbsp;the&nbsp;ball&nbsp;if&nbsp;it&nbsp;collides&nbsp;with&nbsp;either&nbsp;paddle.<br>
+-&nbsp;Resets&nbsp;the&nbsp;ball&nbsp;position&nbsp;and&nbsp;updates&nbsp;scores&nbsp;if&nbsp;it&nbsp;goes<br>
+&nbsp;&nbsp;off-screen&nbsp;on&nbsp;either&nbsp;side.</span></dd></dl>
+ <dl><dt><a name="-move_paddles"><strong>move_paddles</strong></a>(keys)</dt><dd><span class="code">Handles&nbsp;the&nbsp;movement&nbsp;of&nbsp;the&nbsp;player's&nbsp;paddle&nbsp;based&nbsp;on&nbsp;keyboard&nbsp;input.<br>
+-&nbsp;Moves&nbsp;the&nbsp;paddle&nbsp;up&nbsp;or&nbsp;down&nbsp;if&nbsp;the&nbsp;corresponding&nbsp;keys&nbsp;(up/down&nbsp;arrow)<br>
+&nbsp;&nbsp;are&nbsp;pressed.<br>
+-&nbsp;Ensures&nbsp;the&nbsp;paddle&nbsp;stays&nbsp;within&nbsp;the&nbsp;screen&nbsp;boundaries.</span></dd></dl>
+ <dl><dt><a name="-multi_paddles"><strong>multi_paddles</strong></a>(keys)</dt><dd><span class="code">Handles&nbsp;the&nbsp;movement&nbsp;of&nbsp;the&nbsp;opponent&nbsp;paddle&nbsp;based&nbsp;on&nbsp;keyboard&nbsp;input<br>
+in&nbsp;multiplayer&nbsp;mode.<br>
+-&nbsp;Uses&nbsp;the&nbsp;'W'&nbsp;and&nbsp;'S'&nbsp;keys&nbsp;to&nbsp;move&nbsp;the&nbsp;opponent&nbsp;paddle&nbsp;up&nbsp;and&nbsp;down.<br>
+-&nbsp;Ensures&nbsp;the&nbsp;paddle&nbsp;stays&nbsp;within&nbsp;the&nbsp;screen&nbsp;boundaries.</span></dd></dl>
+ <dl><dt><a name="-reset_ball"><strong>reset_ball</strong></a>()</dt><dd><span class="code">Resets&nbsp;the&nbsp;ball&nbsp;to&nbsp;the&nbsp;center&nbsp;of&nbsp;the&nbsp;screen&nbsp;and&nbsp;reverses&nbsp;its&nbsp;horizontal&nbsp;direction.</span></dd></dl>
+ <dl><dt><a name="-reset_paddles"><strong>reset_paddles</strong></a>()</dt><dd><span class="code">Resets&nbsp;the&nbsp;paddles&nbsp;to&nbsp;their&nbsp;starting&nbsp;positions&nbsp;at&nbsp;the&nbsp;center<br>
+of&nbsp;their&nbsp;respective&nbsp;sides.<br>
+Ensures&nbsp;paddles&nbsp;stay&nbsp;within&nbsp;the&nbsp;screen&nbsp;boundaries.</span></dd></dl>
+ <dl><dt><a name="-single_paddles"><strong>single_paddles</strong></a>(keys)</dt><dd><span class="code">Moves&nbsp;the&nbsp;opponent&nbsp;paddle&nbsp;automatically&nbsp;in&nbsp;singleplayer&nbsp;mode.<br>
+-&nbsp;The&nbsp;paddle&nbsp;follows&nbsp;the&nbsp;ball's&nbsp;vertical&nbsp;position&nbsp;to&nbsp;simulate<br>
+&nbsp;&nbsp;an&nbsp;AI&nbsp;opponent.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>BAL_SIZ</strong> = 15<br>
+<strong>BAL_SPD</strong> = [4, 4]<br>
+<strong>COL_BLK</strong> = (0, 0, 0)<br>
+<strong>COL_GRY</strong> = (22, 22, 22)<br>
+<strong>COL_WHI</strong> = (255, 255, 255)<br>
+<strong>FPS</strong> = 60<br>
+<strong>PDL_HGH</strong> = 150<br>
+<strong>PDL_SPD</strong> = 8<br>
+<strong>PDL_WDT</strong> = 15<br>
+<strong>SCR_HGH</strong> = 800<br>
+<strong>SCR_WDT</strong> = 1200<br>
+<strong>ball</strong> = &lt;rect(593, 393, 15, 15)&gt;<br>
+<strong>ball_multiplier</strong> = 1.0<br>
+<strong>clock</strong> = &lt;Clock(fps=0.00)&gt;<br>
+<strong>font</strong> = &lt;pygame.font.Font object&gt;<br>
+<strong>mode</strong> = 0<br>
+<strong>opponent_paddle</strong> = &lt;rect(10, 325, 15, 150)&gt;<br>
+<strong>opponent_score</strong> = 0<br>
+<strong>player_paddle</strong> = &lt;rect(1175, 325, 15, 150)&gt;<br>
+<strong>player_score</strong> = 0<br>
+<strong>score</strong> = &lt;pygame.font.Font object&gt;<br>
+<strong>screen</strong> = &lt;Surface(1200x800x32 SW)&gt;</td></tr></table>
+</body></html>

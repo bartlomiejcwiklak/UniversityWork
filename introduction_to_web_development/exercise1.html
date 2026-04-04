@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes fadeInAnimation {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes nice {
+            0% { transform: rotate(0deg);}
+            100% { transform: rotate(360deg);}
+        }
+
+        body {
+            animation: fadeInAnimation ease 3s;
+            margin: 25px;
+            font-family: "Afacad Flux", sans-serif;
+            background-color: rgb(234, 225, 217);
+        }
+
+        #main{
+            margin: auto;
+            text-align: center;
+        }
+
+        #footer{
+            margin: auto;
+            height: 50px;
+        }
+
+        #title{
+            padding-top: 4.5vh;
+        }
+
+        img {
+            margin-top: 2vh;
+            border-radius: 10px;
+        }
+
+        #secondimage{
+            animation: nice linear 3s;
+            animation-iteration-count: infinite;
+            width: auto;
+            height: 100px;
+        }
+
+        #color, #color2 {
+            width: fit-content;
+            padding: 10px;
+            margin: auto;
+        }
+
+        #color { background-color: tomato; }
+        #color2 { background-color: rgb(114, 216, 110); }
+        #color3 { background-color: rgb(227, 44, 44); }
+        #color4 { background-color: rgba(227, 44, 44, 0.75); }
+        #color5 { background-color: rgba(227, 44, 44, 0.5); }
+        #color6 { background-color: rgba(227, 44, 44, 0.25); }
+
+        #paragraph {
+            margin-left: 20vw;
+            margin-right: 20vw;
+            margin-top: 8vh;
+            text-align: justify;
+        }
+
+        #bigtext:hover {
+            opacity: 75%;
+            user-select: none;
+            transform: rotate(3deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1 id="title">Lodz University of Technology</h1>
+        <p>CS1</p>
+        <h2>Lodz 1</h2>
+        <h3>Lodz 2</h3>
+        <h4>Lodz 3</h4>
+        <h5>Lodz 4</h5>
+        <h6>Lodz 5</h6>
+        <img src="https://www.ife.p.lodz.pl/sites/ife/files/styles/lista_newsow_510x330_/public/2022-08/20180619_121349.jpg" alt="IFE"><br>
+        <img id="secondimage" src="https://www.ife.p.lodz.pl/sites/ife/files/styles/lista_newsow_510x330_/public/2022-08/20180619_121349.jpg" alt="IFE2"><br>
+        <a href="https://ife.p.lodz.pl" style="margin-top: 20px;"><h4>Visit our website!</h4></a>
+        <a href="https://ife.p.lodz.pl" target="_blank"><h4>Visit our website (in a new window)</h4></a>
+        <p style="color: orange">Lodz University of Technology</p>
+        <p style="color: black">Lodz University of Technology</p>
+        <p style="color: blue">Lodz University of Technology</p>
+        <h1 id="bigtext" style="font-size:160px; line-height: 15vh;">Lodz University of Technology</h1>
+        <p style="margin-top: 20px;">This line will be written from left to right</p>
+        <bdo dir="rtl">This line will be written from right to left</bdo>
+        <p style="background-color: rgb(236, 188, 98); padding: 10px; margin-top: 20px;">Lodz University of Technology</p>
+        <p style="background-color: rgb(93, 223, 193); padding: 10px;">Lodz University of Technology</p>
+        <div id="color"><p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Lodz University of Technology</p></div>
+        <div id="color2"><p style="font-family:Georgia, 'Times New Roman', Times, serif">Lodz University of Technology</p></div>
+    </div>
+    <div id="paragraph"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum elementum ante, sed eleifend turpis maximus non. Praesent ullamcorper lectus vitae ligula hendrerit vestibulum. Curabitur sit amet dictum felis. Morbi ut nibh gravida, semper enim et, ornare augue. Integer a fringilla ex, non posuere nisl. Ut ac sem nisl. Duis in aliquet lacus. Suspendisse leo felis, tristique in rhoncus et, cursus vel augue.<br><br>
+        </b>Nullam placerat diam felis. Curabitur in neque vel nisl ullamcorper mollis in nec leo. Integer quis porttitor nisl, in ultricies est. Proin fringilla bibendum tincidunt. Nam eget bibendum tellus, sit amet sodales lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac porta ligula, nec ultrices nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus.<br><br>
+        <i>Cras fringilla viverra ipsum id facilisis. Ut cursus ligula eu urna ullamcorper, eu egestas purus tempor. Praesent eu vestibulum lacus. Sed mollis nisl quis quam scelerisque, in aliquam nisi posuere. Suspendisse iaculis sem bibendum, tincidunt urna quis, consectetur risus. Pellentesque ut lacinia mi. Donec tincidunt vulputate massa, nec volutpat ligula vulputate eget.<br><br>
+        </i><span style="text-decoration: line-through;">Mauris tortor dolor, facilisis ut odio id, fringilla ultrices tortor. Vestibulum finibus risus in tellus tempor vestibulum. Nullam pulvinar enim cursus, placerat orci in, ultricies sem. Donec maximus vulputate dolor, vitae accumsan quam ornare tristique. In lorem ante, ultricies et felis vitae, sodales ultricies risus. Nullam molestie diam urna, sit amet luctus est scelerisque convallis. Proin vestibulum ac leo vitae posuere. Aenean eget tortor id ex laoreet fermentum et eu elit. Quisque dictum commodo quam nec pellentesque. Nullam euismod laoreet varius. Curabitur leo leo, pharetra et risus accumsan, viverra dictum nulla. Proin eget felis mi. Morbi pretium malesuada dignissim. Nullam quis venenatis elit. Integer suscipit lorem nec lorem elementum condimentum. Nullam rutrum ex quis diam hendrerit, eu commodo diam facilisis.<br><br>
+        </span>Cras in ligula ac arcu volutpat blandit. <mark>Nullam bibendum erat at dolor aliquam</mark>, et venenatis massa egestas. Morbi pretium tortor vel imperdiet fermentum. Vivamus lorem dolor, tincidunt vel imperdiet a, ultricies id risus. Etiam a mattis augue, et feugiat purus. Etiam accumsan arcu nunc, eget rhoncus metus interdum ac. Sed malesuada magna ac tincidunt lobortis. Praesent porttitor libero quis mi euismod, non ultricies turpis molestie. Aenean egestas, urna eget tincidunt eleifend, urna turpis feugiat mi, eget egestas urna eros et nunc. Sed eleifend orci in placerat pharetra. Nam sodales dui pharetra libero aliquam, vitae finibus diam molestie. Duis sed nisl leo.
+    </div>
+    <div id="main">
+        <br>
+        <h2>Water is H<sub>2</sub>O</h2>
+        <h3><abbr title="International Faculty of Engineering">IFE was founded in 2007.</abbr></h3><br>
+        <div id="color3">
+            <h2>100% Red</h2>
+        </div>
+        <div id="color4">
+            <h2>75% Red</h2>
+        </div>
+        <div id="color5">
+            <h2>50% Red</h2>
+        </div>
+        <div id="color6">
+            <h2>25% Red</h2>
+        </div>
+        <br>
+        <div style="border:rgb(227, 44, 44) 5px solid; font-size: 30px;">International Faculty of Engineering</div><br>
+        <div style="border:rgb(35, 157, 85) 5px solid; font-size: 30px;">International Faculty of Engineering</div><br>
+        <div style="border:rgb(44, 96, 227) 5px solid; font-size: 30px;">International Faculty of Engineering</div>
+    </div>
+
+    <div id="footer"></div>
+</body>
+</html>
+
+<!-- hello -->

@@ -1,0 +1,3 @@
+/Users/baro/CLionProjects/lol/cmake-build-debug/CMakeFiles/lol.dir
+/Users/baro/CLionProjects/lol/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/baro/CLionProjects/lol/cmake-build-debug/CMakeFiles/rebuild_cache.dir

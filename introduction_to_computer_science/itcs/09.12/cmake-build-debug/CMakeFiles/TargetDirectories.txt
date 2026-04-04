@@ -1,0 +1,3 @@
+/Users/baro/College/C/itcs/09.12/cmake-build-debug/CMakeFiles/09_12.dir
+/Users/baro/College/C/itcs/09.12/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/baro/College/C/itcs/09.12/cmake-build-debug/CMakeFiles/rebuild_cache.dir

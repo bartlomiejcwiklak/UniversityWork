@@ -1,0 +1,38 @@
+======= Polynomial p1 =======
+-2.3x^3 + 5x^2 - 4.5
+
+======= Polynomial p2 =======
+x^4 - 7x^2 + 3x + 2.6
+	Coefficient 5: 0
+	Coefficient 4: 1
+	Coefficient 3: 0
+	Coefficient 2: -7
+	Coefficient 1: 3
+	Coefficient 0: 2.6
+x^4 - 7x^2 + 3x + 2.6
+	Coefficient 5: 0
+	Coefficient 4: 1
+	Coefficient 3: 0
+	Coefficient 2: -7
+	Coefficient 1: 3
+	Coefficient 0: 2.6
+
+======= Addition =======
+Sum of polynomials p1 and p2: x^4 - 2.3x^3 - 2x^2 + 3x - 1.9
+Sum of polynomial p1 and 2.4: -2.3x^3 + 5x^2 - 2.1
+Sum of 2.4 and polynomial p1: -2.3x^3 + 5x^2 - 2.1
+
+======= Subtraction =======
+Difference of polynomials p1 and p2: -x^4 - 2.3x^3 + 12x^2 - 3x - 7.1
+Difference of polynomials p1 and p1: 0
+Difference of polynomial p1 and 5.3: -2.3x^3 + 5x^2 - 9.8
+Difference of 5.3 and polynomial p1: 2.3x^3 - 5x^2 + 9.8
+
+======= Multiplication =======
+Product of polynomials p1 and p2: -2.3x^7 + 5x^6 + 16.1x^5 - 46.4x^4 + 9.02x^3 + 44.5x^2 - 13.5x - 11.7
+6.7 multiplied by polynomial p1: -15.41x^3 + 33.5x^2 - 30.15
+Polynomial p1 multiplied by 6.7: -15.41x^3 + 33.5x^2 - 30.15
+
+======= Value =======
+Value of polynomial p1 at point  3.9: -64.8837
+Value of polynomial p2 at point -2.8: 0.7856

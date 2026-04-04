@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module can</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">can</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:/Users/baro/Desktop/Cannibaks/can.py">/Users/baro/Desktop/Cannibaks/can.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="pygame.html">pygame</a><br>
+</td><td class="multicolumn"><a href="sys.html">sys</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="can.html#GameState">GameState</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="GameState">class <strong>GameState</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Represents&nbsp;the&nbsp;current&nbsp;state&nbsp;of&nbsp;the&nbsp;game&nbsp;and&nbsp;contains&nbsp;logic&nbsp;for&nbsp;validating<br>
+and&nbsp;updating&nbsp;the&nbsp;game.&nbsp;This&nbsp;includes&nbsp;the&nbsp;state&nbsp;of&nbsp;both&nbsp;banks,&nbsp;the&nbsp;boat,<br>
+and&nbsp;tracking&nbsp;moves.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="GameState-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Initializes&nbsp;the&nbsp;game&nbsp;state&nbsp;with&nbsp;the&nbsp;initial&nbsp;setup:<br>
+-&nbsp;3&nbsp;missionaries&nbsp;and&nbsp;3&nbsp;cannibals&nbsp;on&nbsp;the&nbsp;left&nbsp;bank.<br>
+-&nbsp;An&nbsp;empty&nbsp;boat&nbsp;positioned&nbsp;on&nbsp;the&nbsp;left&nbsp;bank.</span></dd></dl>
+
+<dl><dt><a name="GameState-is_game_over"><strong>is_game_over</strong></a>(self)</dt><dd><span class="code">Determines&nbsp;if&nbsp;the&nbsp;game&nbsp;has&nbsp;reached&nbsp;a&nbsp;terminal&nbsp;state.<br>
+Checks&nbsp;for&nbsp;success&nbsp;(all&nbsp;characters&nbsp;safely&nbsp;transported)&nbsp;or&nbsp;failure<br>
+(a&nbsp;bank&nbsp;has&nbsp;more&nbsp;cannibals&nbsp;than&nbsp;missionaries).<br>
+Returns:<br>
+-&nbsp;'success'&nbsp;if&nbsp;the&nbsp;game&nbsp;is&nbsp;won.<br>
+-&nbsp;'failure'&nbsp;if&nbsp;the&nbsp;game&nbsp;is&nbsp;lost.<br>
+-&nbsp;None&nbsp;if&nbsp;the&nbsp;game&nbsp;is&nbsp;ongoing.</span></dd></dl>
+
+<dl><dt><a name="GameState-is_valid_state"><strong>is_valid_state</strong></a>(self, bank)</dt><dd><span class="code">Verifies&nbsp;that&nbsp;the&nbsp;state&nbsp;of&nbsp;a&nbsp;given&nbsp;bank&nbsp;is&nbsp;valid.<br>
+A&nbsp;valid&nbsp;state&nbsp;is&nbsp;one&nbsp;where&nbsp;missionaries&nbsp;are&nbsp;not&nbsp;outnumbered<br>
+by&nbsp;cannibals,&nbsp;unless&nbsp;there&nbsp;are&nbsp;no&nbsp;missionaries&nbsp;on&nbsp;that&nbsp;bank.<br>
+-&nbsp;bank:&nbsp;Dictionary&nbsp;representing&nbsp;the&nbsp;state&nbsp;of&nbsp;a&nbsp;bank.<br>
+Returns&nbsp;True&nbsp;if&nbsp;the&nbsp;state&nbsp;is&nbsp;valid,&nbsp;otherwise&nbsp;False.</span></dd></dl>
+
+<dl><dt><a name="GameState-move_boat"><strong>move_boat</strong></a>(self)</dt><dd><span class="code">Initiates&nbsp;the&nbsp;movement&nbsp;of&nbsp;the&nbsp;boat&nbsp;to&nbsp;the&nbsp;opposite&nbsp;bank&nbsp;if&nbsp;it&nbsp;contains<br>
+at&nbsp;least&nbsp;one&nbsp;character.&nbsp;Updates&nbsp;the&nbsp;move&nbsp;count&nbsp;accordingly.</span></dd></dl>
+
+<dl><dt><a name="GameState-update_boat_position"><strong>update_boat_position</strong></a>(self)</dt><dd><span class="code">Smoothly&nbsp;moves&nbsp;the&nbsp;boat&nbsp;toward&nbsp;its&nbsp;target&nbsp;position.&nbsp;Once&nbsp;the&nbsp;boat<br>
+reaches&nbsp;its&nbsp;destination,&nbsp;switches&nbsp;its&nbsp;position&nbsp;to&nbsp;the&nbsp;opposite&nbsp;bank.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-checkGameOver"><strong>checkGameOver</strong></a>()</dt><dd><span class="code">Checks&nbsp;whrther&nbsp;the&nbsp;player&nbsp;had&nbsp;lost&nbsp;the&nbsp;game.</span></dd></dl>
+ <dl><dt><a name="-draw_game_state"><strong>draw_game_state</strong></a>()</dt><dd><span class="code">Draws&nbsp;the&nbsp;current&nbsp;game&nbsp;state,&nbsp;including:<br>
+-&nbsp;Boat&nbsp;position&nbsp;and&nbsp;contents.<br>
+-&nbsp;Characters&nbsp;on&nbsp;each&nbsp;bank.<br>
+-&nbsp;Number&nbsp;of&nbsp;moves&nbsp;taken&nbsp;by&nbsp;the&nbsp;player.</span></dd></dl>
+ <dl><dt><a name="-handle_click"><strong>handle_click</strong></a>(pos)</dt><dd><span class="code">Processes&nbsp;mouse&nbsp;click&nbsp;events&nbsp;to&nbsp;interact&nbsp;with&nbsp;the&nbsp;game.<br>
+Depending&nbsp;on&nbsp;the&nbsp;clicked&nbsp;position,&nbsp;the&nbsp;user&nbsp;can:<br>
+-&nbsp;Move&nbsp;a&nbsp;character&nbsp;onto&nbsp;the&nbsp;boat.<br>
+-&nbsp;Move&nbsp;a&nbsp;character&nbsp;off&nbsp;the&nbsp;boat.<br>
+-&nbsp;Move&nbsp;the&nbsp;boat&nbsp;to&nbsp;the&nbsp;opposite&nbsp;bank.</span></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><span class="code">Runs&nbsp;the&nbsp;main&nbsp;game&nbsp;loop.</span></dd></dl>
+ <dl><dt><a name="-move_character_from_boat"><strong>move_character_from_boat</strong></a>(character_type)</dt><dd><span class="code">Transfers&nbsp;a&nbsp;character&nbsp;from&nbsp;the&nbsp;boat&nbsp;to&nbsp;the&nbsp;respective&nbsp;bank.<br>
+Increments&nbsp;the&nbsp;count&nbsp;of&nbsp;the&nbsp;character&nbsp;type&nbsp;on&nbsp;the&nbsp;bank.</span></dd></dl>
+ <dl><dt><a name="-move_character_to_boat"><strong>move_character_to_boat</strong></a>(bank, character_type)</dt><dd><span class="code">Transfers&nbsp;a&nbsp;character&nbsp;from&nbsp;a&nbsp;bank&nbsp;to&nbsp;the&nbsp;boat,&nbsp;ensuring&nbsp;the&nbsp;boat&nbsp;does&nbsp;not&nbsp;exceed<br>
+its&nbsp;capacity.&nbsp;Decrements&nbsp;the&nbsp;count&nbsp;of&nbsp;the&nbsp;character&nbsp;type&nbsp;on&nbsp;the&nbsp;bank.</span></dd></dl>
+ <dl><dt><a name="-render_text"><strong>render_text</strong></a>(text, x, y, font_size=36, center=False)</dt><dd><span class="code">Renders&nbsp;a&nbsp;string&nbsp;of&nbsp;text&nbsp;on&nbsp;the&nbsp;screen&nbsp;at&nbsp;a&nbsp;specified&nbsp;position.<br>
+-&nbsp;text:&nbsp;The&nbsp;string&nbsp;to&nbsp;display.<br>
+-&nbsp;x,&nbsp;y:&nbsp;Coordinates&nbsp;of&nbsp;the&nbsp;position&nbsp;where&nbsp;the&nbsp;text&nbsp;will&nbsp;be&nbsp;rendered.<br>
+-&nbsp;font_size:&nbsp;The&nbsp;size&nbsp;of&nbsp;the&nbsp;font&nbsp;for&nbsp;the&nbsp;text.<br>
+-&nbsp;center:&nbsp;If&nbsp;True,&nbsp;centers&nbsp;the&nbsp;text&nbsp;at&nbsp;the&nbsp;specified&nbsp;coordinates.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>BG_COL</strong> = (135, 206, 235)<br>
+<strong>BG_IMG</strong> = &lt;Surface(900x600x32 SW)&gt;<br>
+<strong>BOAT_CAPACITY</strong> = 2<br>
+<strong>BOAT_IMG</strong> = &lt;Surface(120x80x32 SW)&gt;<br>
+<strong>CAN_IMG</strong> = &lt;Surface(80x80x32 SW)&gt;<br>
+<strong>FON_COL</strong> = (0, 0, 0)<br>
+<strong>FPS</strong> = 60<br>
+<strong>MIS_IMG</strong> = &lt;Surface(80x80x32 SW)&gt;<br>
+<strong>SCR_HIG</strong> = 600<br>
+<strong>SCR_WID</strong> = 900<br>
+<strong>font</strong> = &lt;pygame.font.Font object&gt;<br>
+<strong>game_over_screen</strong> = False<br>
+<strong>game_result</strong> = None<br>
+<strong>screen</strong> = &lt;Surface(900x600x32 SW)&gt;<br>
+<strong>state</strong> = &lt;can.GameState object&gt;</td></tr></table>
+</body></html>

@@ -1,0 +1,3 @@
+/Users/baro/CLionProjects/zadania/cmake-build-debug/CMakeFiles/zadania.dir
+/Users/baro/CLionProjects/zadania/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/baro/CLionProjects/zadania/cmake-build-debug/CMakeFiles/rebuild_cache.dir

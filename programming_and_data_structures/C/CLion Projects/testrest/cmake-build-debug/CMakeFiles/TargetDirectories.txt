@@ -1,0 +1,3 @@
+/Users/baro/CLionProjects/testrest/cmake-build-debug/CMakeFiles/testrest.dir
+/Users/baro/CLionProjects/testrest/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/baro/CLionProjects/testrest/cmake-build-debug/CMakeFiles/rebuild_cache.dir

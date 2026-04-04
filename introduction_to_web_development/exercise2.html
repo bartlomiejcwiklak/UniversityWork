@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            margin: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hidden Click</h1>
+    <input type="button" value="Click Me!" onclick="alert('I like IFE')"><br><br><hr><br>
+    <form>
+        <label>Username:</label><br>
+        <input type="text"><br>
+        <label>Password:</label><br>
+        <input type="password"><br>
+    </form><br><hr><br>
+    <form>
+        <label>NAME:</label><br>
+        <input type="text"><br>
+        <label>Password:</label><br>
+        <input type="text"><br><br>
+        <input type="button" value="Register">
+    </form>
+    <br><br><hr><br>
+    <form action="https://google.com">
+        <label>Username:</label><br>
+        <input type="text" id="username"><br>
+        <label>Password:</label><br>
+        <input type="text" id="password"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    <br><br><hr><br>
+    <form action="https://google.com">
+        <label>Username:</label><br>
+        <input type="text" id="username"><br>
+        <label>Password:</label><br>
+        <input type="password" id="password">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    <br><br><hr><br>
+    <h1>What is your best city?</h1>
+    <input type="radio" id="r1" label="Lodz"><label>Lodz</label><br>
+    <input type="radio" id="r2" value="Madrid"><label>Madrid</label><br>
+    <input type="radio" id="r3" value="Dubai"><label>Dubai</label><br>
+    <br><br><hr><br>
+    <h1>What is the range of your age?</h1>
+    <input type="checkbox" id="c1" label="2022"><label>20-22</label><br>
+    <input type="checkbox" id="c2" value="2024"><label>22-24</label><br>
+    <input type="checkbox" id="c3" value="24plus"><label>More than 24</label><br>
+    <br><br><hr><br>
+    <h1>Registration Form CSIT</h1>
+    <p>Please, use your email for registration to the course:</p>
+    <form action="">
+        <label>Enter your email:</label> <input type="text" name="email" id="email"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br><br><hr><br>
+    <h1>Choose your best color</h1>
+    <p>You need to use --> type="color"</p>
+    <label>Select your favorite color: </label><input type="color" name="" id="">
+    <input type="submit" value="Submit">
+    <br><br><hr><br>
+    <h1>You need to use date now</h1>
+    <label>Birthday: </label><input type="date" name="" id="" pattern="\d{4}-\d{2}-\d{2}">
+    <input type="submit" value="Submit">
+    <br><br><hr><br>
+    <h1>Use Date only between 2010-01-01 // 2020-01-01</h1>
+    <label for="">Enter a date after 2010-01-01</label>
+    <input type="date" name="" id="" min="2010-01-01"><br><br>
+    <label for="">Enter a date before 2020-01-01</label>
+    <input type="date" name="" id="" max="2020-01-01"><br><br>
+    <input type="submit" value="Submit">
+    <br><br><hr><br>
+    <h1>Please select your best Phone Company</h1>
+    <label>phone should with 5G option</label>
+    <select>
+        <option>Samsung</option>
+        <option>iPhone</option>
+        <option>Sony</option>
+        <option>MoT</option>
+    </select>
+    <input type="submit" value="Submit">
+    <br><br><hr><br>
+    <h1>Different view</h1>
+    <label>phone should with 5G option</label>
+    <select size="3">
+        <option>Samsung</option>
+        <option>iPhone</option>
+        <option>Sony</option>
+        <option>MoT</option>
+    </select><br><br>
+    <input type="submit" value="Submit">
+    <br><br><hr><br>
+    <h1>Different view 2</h1>
+    <label>phone should with 5G option</label>
+    <select size="10">
+        <option>Samsung</option>
+        <option>iPhone</option>
+        <option>Sony</option>
+        <option>MoT</option>
+    </select><br><br>
+    <input type="submit" value="Submit">
+    <br><br><hr><br>
+    <h1>different view 3</h1>
+    <label>phone should with 5G option</label>
+    <textarea name="" id="" rows="10" cols="30">adadas</textarea>
+    <br><br><hr><br>
+    <h1>Month: you need "bdaymonth"</h1>
+    <label>Press and see the change</label>
+    <input type="month">
+    <br><br><hr><br>
+    <h1>Choose your grade:</h1>
+    <label>Allowed range (from 1 to 10): </label><input type="number" name="" id="" min="1" max="10">
+    <input type="submit" value="Submit">
+    <br><br><hr><br>
+    <h1>Choose your grade</h1>
+    <label>Allowed range (from 1 to 10:)</label>
+    <input type="range" name="" id="" min="1" max="10">
+    <input type="submit" value="Submit">
+    <br><br><hr><br>
+    <h1>Phone number</h1>
+    <p>Enter a phone number</p>
+    <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" name="" id="">
+    <p>Format: 111-11-111</p>
+    <input type="submit" value="Submit">
+    <br><br><hr><br>
+    <p>This is an email link: <a href="mailto:ife@p.lodz.pl?subject=Support">Send Mail</a></p>
+    <p>Send this message as soon as possible</p>
+    <p>Lodz University of Technology</p>
+    <br><br><hr><br>
+    <table border="black 1px solid">
+        <tr>
+        <th>Name</th>
+        <th>Lab</th>
+        <th>Building</th>
+        </tr>
+        <tr>
+            <td>Network</td>
+            <td>Lab2</td>
+            <td>A12y</td>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>Lab1</td>
+            <td>A15</td>
+        </tr>
+    </table>
+</body>
+</html>
