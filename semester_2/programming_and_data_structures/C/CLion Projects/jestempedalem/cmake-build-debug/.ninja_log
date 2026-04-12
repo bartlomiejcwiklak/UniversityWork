@@ -1,0 +1,19 @@
+# ninja log v6
+147	229	1734348328433099663	jestempedalem	19dfee760aee3cf8
+2	147	1734348328288557737	CMakeFiles/jestempedalem.dir/main.c.o	dd1fd7fba18302f
+2	56	1737553277794457439	build.ninja	cd0743336efff29c
+0	186	1737553277801246095	CMakeFiles/jestempedalem.dir/main.c.o	dd1fd7fba18302f
+186	335	1737553277987266951	jestempedalem	19dfee760aee3cf8
+1	44	1737553439637048787	CMakeFiles/jestempedalem.dir/main.c.o	dd1fd7fba18302f
+44	80	1737553439680177735	jestempedalem	19dfee760aee3cf8
+1	50	1737553607831989859	CMakeFiles/jestempedalem.dir/main.c.o	dd1fd7fba18302f
+50	133	1737553607880985518	jestempedalem	19dfee760aee3cf8
+1	47	1737553652482755246	CMakeFiles/jestempedalem.dir/main.c.o	dd1fd7fba18302f
+47	77	1737553652528981026	jestempedalem	19dfee760aee3cf8
+1	43	1737553785826590032	CMakeFiles/jestempedalem.dir/main.c.o	dd1fd7fba18302f
+43	72	1737553785869317902	jestempedalem	19dfee760aee3cf8
+1	40	1737553827454975076	CMakeFiles/jestempedalem.dir/main.c.o	dd1fd7fba18302f
+40	69	1737553827494620781	jestempedalem	19dfee760aee3cf8
+2	136	1737553988168015330	CMakeFiles/jestempedalem.dir/main.c.o	dd1fd7fba18302f
+1	41	1737554036365079675	CMakeFiles/jestempedalem.dir/main.c.o	dd1fd7fba18302f
+41	73	1737554036405322037	jestempedalem	19dfee760aee3cf8

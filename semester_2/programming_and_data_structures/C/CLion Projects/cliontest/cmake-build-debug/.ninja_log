@@ -1,0 +1,10 @@
+# ninja log v6
+1	27	1728580748205102000	CMakeFiles/cliontest.dir/main.c.o	ef2d05fd5e1ff6e6
+27	53	1728580748231270714	cliontest	61628bc8bd4b3d36
+1	38	1728580920331641754	build.ninja	21308bae08b245e2
+0	69	1728580920337128022	CMakeFiles/cliontest.dir/exercise1_5.c.o	560c69f108e0a163
+0	69	1728580920336955314	CMakeFiles/cliontest.dir/main.c.o	ef2d05fd5e1ff6e6
+1	70	1728580920337223314	CMakeFiles/cliontest.dir/exercise1_6.c.o	2f096e9e405a9e94
+2	36	1728580946459093102	CMakeFiles/cliontest.dir/exercise1_6.c.o	2f096e9e405a9e94
+5	202	1728744722540016260	CMakeFiles/cliontest.dir/exercise1_6.c.o	2f096e9e405a9e94
+0	25	1729501445565286981	CMakeFiles/cliontest.dir/exercise1_5.c.o	560c69f108e0a163
