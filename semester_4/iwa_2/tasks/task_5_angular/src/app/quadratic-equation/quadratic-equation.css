@@ -1,0 +1,21 @@
+.eq {
+  margin: 0 0 1rem;
+  font-family: ui-monospace, monospace;
+  font-size: 1.05rem;
+}
+
+.fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.fields mat-form-field {
+  flex: 1 1 120px;
+  min-width: 100px;
+}
+
+.result {
+  margin: 1rem 0 0;
+  line-height: 1.5;
+}

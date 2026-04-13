@@ -1,0 +1,27 @@
+.n-field {
+  width: 100%;
+  max-width: 280px;
+}
+
+.note {
+  margin: 0 0 0.75rem;
+  font-size: 0.85rem;
+  color: var(--mat-sys-on-surface-variant, rgba(0, 0, 0, 0.65));
+}
+
+.seq {
+  margin: 0;
+  line-height: 1.6;
+  font-family: ui-monospace, monospace;
+  word-break: break-word;
+}
+
+.term {
+  display: inline-block;
+  margin-right: 0.15rem;
+}
+
+.sep {
+  margin-right: 0.35rem;
+  color: var(--mat-sys-outline, #79747e);
+}

@@ -1,0 +1,22 @@
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>Quadratic equation</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="fields">
+      <mat-form-field appearance="outline">
+        <mat-label>a</mat-label>
+        <input matInput type="number" step="any" [formField]="coeffsForm.a" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>b</mat-label>
+        <input matInput type="number" step="any" [formField]="coeffsForm.b" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>c</mat-label>
+        <input matInput type="number" step="any" [formField]="coeffsForm.c" />
+      </mat-form-field>
+    </div>
+    <p class="result">{{ analysis().summary }}</p>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,62 @@
+<mat-card appearance="outlined" class="calc-card">
+  <mat-card-header>
+    <mat-card-title>Calculator</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="fields">
+      <mat-form-field appearance="outline">
+        <mat-label>a</mat-label>
+        <input matInput type="number" step="any" [formField]="operandsForm.a" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>b</mat-label>
+        <input matInput type="number" step="any" [formField]="operandsForm.b" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="op-field">
+        <mat-label>Operation</mat-label>
+        <mat-select [value]="operation()" (selectionChange)="onOperationChange($event)">
+          @for (op of operations; track op.value) {
+            <mat-option [value]="op.value">{{ op.label }}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <p class="result">
+      @if (result().ok) {
+        <strong>Result:</strong>
+        <span>{{ result().value }}</span>
+      } @else {
+        <span class="error">{{ result().error }}</span>
+      }
+    </p>
+  </mat-card-content>
+</mat-card>
+
+<mat-divider class="section-divider" />
+
+<mat-card appearance="outlined" class="calc-card">
+  <mat-card-header>
+    <mat-card-title>Template references</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="rx-row">
+      <mat-form-field appearance="outline">
+        <mat-label>c</mat-label>
+        <input matInput #c type="number" step="any" placeholder="c" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>d</mat-label>
+        <input matInput #d type="number" step="any" placeholder="d" />
+      </mat-form-field>
+      <button matButton="filled" type="button" (click)="rxAddition(c.valueAsNumber, d.valueAsNumber)">
+        Add
+      </button>
+    </div>
+    @if (rxResult !== undefined) {
+      <p class="result"><strong>Result:</strong> {{ rxResult }}</p>
+    }
+  </mat-card-content>
+</mat-card>
